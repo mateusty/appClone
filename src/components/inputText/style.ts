@@ -19,6 +19,6 @@ export const styles = StyleSheet.create({
         color: '#f0f0f0',
         fontWeight: 200,
         fontSize: 14,
-        marginBottom: 5
+        marginBottom: 5,
     }
 })

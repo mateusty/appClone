@@ -8,9 +8,11 @@ export const Login = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.singing}>SIGN IN</Text>
-      <InputText text='STEAM ACCOUNT NAME' />
-      <InputText text='PASSWORD' password={true} />
-      <LoginButton />
+      <View style={styles.inputWrapper}>
+        <InputText text='STEAM ACCOUNT NAME' />
+        <InputText text='PASSWORD' password={true} />
+        <LoginButton />
+      </View>
       <TextLink text='I need help signing in' isHighlighted={false} fontSize={14}/>
       <View style={styles.infoContainer}>
         <TextLink text="Don't have a steam account?" isHighlighted={true} fontSize={18}/>

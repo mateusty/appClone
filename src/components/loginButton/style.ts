@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
         borderRadius: 6,
         margin: 12,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
 
     buttonText: {
         color: '#f0f0f0',
-        fontSize: 20
+        fontSize: 20,
     }
 })

@@ -17,6 +17,12 @@ export const styles = StyleSheet.create({
         fontWeight: '300'
     },
 
+    inputWrapper: {
+        alignItems: 'center',
+        width: '100%',
+        maxWidth: 578
+    },
+
     infoContainer: {
         marginTop: 40,
         alignItems: 'center'
@@ -27,6 +33,6 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20,
         marginTop: 26,
         marginBottom: 8,
-        color: '#90959C'
+        color: '#90959C',
     }
 })
