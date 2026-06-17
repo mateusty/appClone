@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View } from 'react-native';
+import { View, useWindowDimensions } from 'react-native';
 import { Home } from '../pages/Home';
 import { News } from '../pages/News';
 import { Notification } from '../pages/Notification';
@@ -8,10 +8,16 @@ import { Guard } from '../pages/Guard';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from './tabStyle'
 import { LinearGradient } from 'expo-linear-gradient';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const Tab = createBottomTabNavigator();
 
 export function TabNavigation() {
+
+  const insets = useSafeAreaInsets();
+
+  const { width } = useWindowDimensions();
+
   return (
     <Tab.Navigator screenOptions={
       { headerShown: false,
@@ -22,8 +28,10 @@ export function TabNavigation() {
         },
         tabBarStyle: {
           backgroundColor: '#202126',
-          paddingTop: 3,
-          height: 50,
+          borderTopWidth: 0,
+          paddingTop: width >= 675 ? 0 : 6,
+          paddingBottom: insets.bottom,
+          height: 50 + insets.bottom,
           borderColor: 'transparent',
           justifyContent: 'center',
         },
@@ -126,7 +134,7 @@ export function TabNavigation() {
             end={{ x: 1, y: 0.5 }}
             ></LinearGradient>)}
 
-            <Ionicons name="reorder-three" size={size + 6} color={color} />
+            <Ionicons name="list" size={size} color={color} />
           </View>
         )
       }}/>
