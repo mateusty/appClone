@@ -29,14 +29,15 @@ export const styles = StyleSheet.create({
         height: '100%',
         padding: 8,
         justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#4B6922'
     },
 
     discountText: {
         color: '#A1C74E',
         fontSize: 28,
-        fontWeight: '600',
-        marginBottom: 4
+        lineHeight: 22,
+        fontWeight: '600'
     },
 
     cardPrice: {

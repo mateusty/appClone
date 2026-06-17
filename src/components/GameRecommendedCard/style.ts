@@ -38,8 +38,8 @@ export const styles = StyleSheet.create({
     discountText: {
         color: '#A1C74E',
         fontSize: 28,
+        lineHeight: 22,
         fontWeight: '600',
-        marginBottom: 4
     },
 
     cardPrice: {
