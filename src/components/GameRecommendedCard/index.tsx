@@ -16,11 +16,32 @@ export const GameRecommendedCard = ({ game }: GameRecommendedCardProps) => {
       style={styles.cardGradient}
       >
         <Text style={[styles.cardText, {fontWeight: '600', fontSize: 24}]}>{game.title.length > 25 ? `${game.title.slice(0, 25)}...` : game.title}</Text>
-        <View style={[{alignSelf: 'flex-start', padding: 6}, {backgroundColor: (!game.price || game.price === 0) ? 'transparent' : '#000E0C'}]}>
-          <Text style={styles.cardText}>{!game.price || game.price === 0 ? 'Free to Play' : Number(game.price).toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          })}</Text>
+        <View style={styles.cardPriceContainer}>
+          <View style={styles.cardPrice}>
+            {!(game.offer && game.price) && (
+              <Text style={styles.cardText}>{!game.price || game.price === 0 ? 'Free to Play' : Number(game.price).toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+              })}</Text>
+            )}
+            {(game.offer && game.price) && (
+              <>
+                <Text style={[styles.cardText, styles.previousGamePrice]}>{Number(game.price).toLocaleString('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                })}</Text>
+                <Text style={styles.cardText}>{Number(game.price * (1 - game.offer)).toLocaleString('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                })}</Text>
+              </>
+            )}
+          </View>
+          {game.offer && (
+            <View style={styles.cardDiscount}>
+              <Text style={styles.discountText}>-{game.offer * 100}%</Text>
+            </View>
+          )}
         </View>
       </LinearGradient>
     </View>

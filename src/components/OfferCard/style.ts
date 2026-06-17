@@ -2,30 +2,27 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     cardContainer: {
+        marginTop: 12,
         marginHorizontal: 12,
-    },
-
-    cardGradient: {
-        width: 386,
-        height: 126,
-        justifyContent: 'space-around',
-        paddingHorizontal: 12,
-        boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.2)'
+        width: 300,
+        height: 230,
+        backgroundColor: '#1A6A8A',
+        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)'
     },
     
     cardText: {
-        color: '#F9FBFC'
+        color: '#ADC7D4'
     },
 
-        cardPriceContainer: {
+    cardPriceContainer: {
         height: 40,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        alignSelf: 'flex-start',
-        backgroundColor: '#00121C', 
+        alignSelf: 'flex-end',
+        backgroundColor: '#182B38', 
         marginTop: 8,
-        marginLeft: 12
+        marginRight: 12
     },
 
     cardDiscount: {

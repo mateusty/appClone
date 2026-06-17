@@ -5,4 +5,5 @@ export interface GameTypes {
     title: string;
     price?: number;
     image: ImageSourcePropType;
+    offer?: number;
 }

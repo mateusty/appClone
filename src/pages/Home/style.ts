@@ -24,13 +24,20 @@ export const styles = StyleSheet.create({
     recommendedSection: {
         paddingTop: 24,
         width: '100%',
-        height: 400,
+        height: 436,
     },
     
-    recommendedText: {
-        marginLeft: 12,
-        marginBottom: 6,
+    emphasisText: {
         fontSize: 16,
-        fontWeight: '600'
+        fontWeight: '500'
+    },
+
+    offerSection: {
+        borderTopColor: '#203851',
+        borderTopWidth: 4,
+        backgroundColor: '#1C2D47',
+        paddingVertical: 24,
+        width: '100%',
+        height: 564
     }
 })

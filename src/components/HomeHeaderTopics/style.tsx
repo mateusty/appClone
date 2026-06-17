@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
 
     headerText: {
         color: '#f0f0f0',
-        fontWeight: '500'
+        fontWeight: '400'
     },
 
     textCurrency: {
