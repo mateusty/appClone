@@ -6,6 +6,10 @@ export const styles = StyleSheet.create({
         backgroundColor: '#2A2C34'
     },
 
+    simpleText: {
+        color: '#F9FBFC'
+    },
+
     homeHeader: {
         width: '100%',
         height: 96,
@@ -15,5 +19,18 @@ export const styles = StyleSheet.create({
     searchWrapper: {
         width: '100%',
         height: 60,
+    },
+
+    recommendedSection: {
+        paddingTop: 24,
+        width: '100%',
+        height: 400,
+    },
+    
+    recommendedText: {
+        marginLeft: 12,
+        marginBottom: 6,
+        fontSize: 16,
+        fontWeight: '600'
     }
 })
