@@ -53,7 +53,7 @@ export const Home = () => {
           numColumns={4}
           showsVerticalScrollIndicator={false}
           showsHorizontalScrollIndicator={false}
-          data={GamesEdu.filter((game) => game.offer).slice(0, 8)} 
+          data={GamesEdu.slice(3, GamesEdu.length).filter((game) => game.offer).slice(0, 8)} 
           renderItem={({ item }) => (
             <OfferCard game={item} />
           )}

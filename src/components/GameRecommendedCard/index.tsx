@@ -12,10 +12,10 @@ export const GameRecommendedCard = ({ game }: GameRecommendedCardProps) => {
     <View style={styles.cardContainer}>
       <Image source={game.image} style={{ width: '100%', height: 216 }}/>
       <LinearGradient
-      colors={['#0F151C', '#1D3750', '#1E405C']}
+      colors={['#0F151C', '#172531','#1D3750', '#1b3549']}
       style={styles.cardGradient}
       >
-        <Text style={[styles.cardText, {fontWeight: '600', fontSize: 24}]}>{game.title.length > 25 ? `${game.title.slice(0, 25)}...` : game.title}</Text>
+        <Text style={[styles.cardText, {fontWeight: '600', fontSize: 24}]}>{game.title.length > 25 ? `${game.title.slice(0, 20)}...` : game.title}</Text>
         <View style={styles.cardPriceContainer}>
           <View style={styles.cardPrice}>
             {!(game.offer && game.price) && (

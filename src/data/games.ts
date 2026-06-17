@@ -21,65 +21,58 @@ export const GamesEdu = [
     },
     {
         id: 4,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
+        title: 'Expedition 33',
+        price: 199.00,
+        image: require('../assets/GameArt4.jpg'),
         offer: 0.2
     },
     {
         id: 5,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
+        title: 'RV There Yet?',
+        price: 26.49,
+        image: require('../assets/GameArt5.jpg'),
+        offer: 0.3
     },
     {
         id: 6,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
+        title: 'Street Fighter 6',
+        price: 179.00,
+        image: require('../assets/GameArt6.jpg'),
+        offer: 0.5
     },
     {
         id: 7,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
+        title: 'Dead as Disco',
+        price: 74.99,
+        image: require('../assets/GameArt7.jpg'),
+        offer: 0.1
     },
     {
         id: 8,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
+        title: 'Burgling Gnomes',
+        price: 32.99,
+        image: require('../assets/GameArt8.jpg'),
         offer: 0.2
     },
     {
         id: 9,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
+        title: 'JoJo`s Bizarre Adventure: All-Star Battle R',
+        price: 282.50,
+        image: require('../assets/GameArt9.jpg'),
+        offer: 0.72
     },
     {
         id: 10,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
+        title: 'NARUTO SHIPPUDEN: Ultimate Ninja STORM 4',
+        price: 77.50,
+        image: require('../assets/GameArt10.jpg'),
+        offer: 0.8
     },
     {
         id: 11,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
-    },
-    {
-        id: 12,
-        title: 'Não dê nem água 2: O inimigo agora é outro',
-        price: 400.29,
-        image: require('../assets/GameArt3.png'),
-        offer: 0.2
-    },
+        title: 'MECCHA CHAMELEON',
+        price: 23.49,
+        image: require('../assets/GameArt11.jpg'),
+        offer: 0.1
+    }
 ]

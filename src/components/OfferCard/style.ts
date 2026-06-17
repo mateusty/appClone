@@ -2,6 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     cardContainer: {
+        borderRadius: 2,
+        overflow: 'hidden',
         marginTop: 12,
         marginHorizontal: 12,
         width: 300,

@@ -2,6 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     cardContainer: {
+        borderRadius: 2,
+        overflow: 'hidden',
         marginHorizontal: 12,
     },
 
@@ -10,7 +12,7 @@ export const styles = StyleSheet.create({
         height: 126,
         justifyContent: 'space-around',
         paddingHorizontal: 12,
-        boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.2)'
+        boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.4)'
     },
     
     cardText: {
@@ -24,7 +26,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'flex-start',
         backgroundColor: '#00121C', 
-        marginTop: 8,
+        marginBottom: 8,
         marginLeft: 12
     },
 
